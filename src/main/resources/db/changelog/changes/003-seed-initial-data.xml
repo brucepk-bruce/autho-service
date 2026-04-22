@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
+
+    <changeSet id="003-seed-initial-data" author="ivan">
+        <comment>Insertion de données initiales pour le développement</comment>
+
+        <!-- Utilisateur CLIENT (mot de passe: Test1234) -->
+        <insert tableName="users">
+            <column name="name" value="Jean Dupont"/>
+            <column name="email" value="jean@gmail.com"/>
+            <column name="password" value="$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy"/>
+            <column name="phone" value="+1234567890"/>
+            <column name="role" value="CLIENT"/>
+        </insert>
+
+        <!-- Utilisateur RESTAURATEUR (mot de passe: Test1234) -->
+        <insert tableName="users">
+            <column name="name" value="Marie Martin"/>
+            <column name="email" value="marie@gmail.com"/>
+            <column name="password" value="$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy"/>
+            <column name="phone" value="+0987654321"/>
+            <column name="role" value="RESTAURATEUR"/>
+        </insert>
+
+        <!-- Utilisateur LIVREUR (mot de passe: Test1234) -->
+        <insert tableName="users">
+            <column name="name" value="Pierre Dubois"/>
+            <column name="email" value="pierre@gmail.com"/>
+            <column name="password" value="$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy"/>
+            <column name="phone" value="+1122334455"/>
+            <column name="role" value="LIVREUR"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>
