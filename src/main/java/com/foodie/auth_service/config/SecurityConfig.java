@@ -80,9 +80,9 @@ public class SecurityConfig {
 
         // Autoriser ces origines (Angular dev + prod)
         configuration.setAllowedOrigins(Arrays.asList(
-                "http://localhost:4200",                      // Angular développement
-                "https://foodie-delivery.web.app",            // Angular production Firebase
-                "https://foodie-delivery.firebaseapp.com"     // Alternative Firebase
+                "http://localhost:4200",
+                "https://foodie-delivery-f4d8d.web.app",           // ✅ TON URL
+                "https://foodie-delivery-f4d8d.firebaseapp.com"     // Alternative Firebase
         ));
 
         // Autoriser ces méthodes HTTP
