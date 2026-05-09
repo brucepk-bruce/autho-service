@@ -53,4 +53,4 @@ app:
     url: http://localhost:4200
 
 cors:
-  allowed-origins: http://localhost:4200
+  allowed-origins: http://localhost:4200,https://foodie-delivery-f4d8d.web.app,https://foodie-delivery-f4d8d.firebaseapp.com
